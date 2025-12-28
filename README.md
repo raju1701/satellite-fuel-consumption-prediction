@@ -1,19 +1,54 @@
 # 🛰️ Satellite Fuel Consumption Prediction
 
-This project predicts satellite fuel consumption using a Linear Regression model.
-It demonstrates core machine learning concepts such as data generation, model training,
-evaluation, and real-world interpretation.
+## 📌 Overview
+This project uses a **Linear Regression model** to predict satellite fuel consumption based on mission and orbital parameters.  
+The goal is to understand how different factors influence fuel usage and support mission planning decisions.
 
-## Features
-- Satellite_Mass
-- Orbit_Altitude
-- Mission_Duration
-- Orbit_Corrections
+---
 
-## Model
-- Linear Regression (Scikit-learn)
+## 🎯 Problem Statement
+Satellite fuel is limited and critical for mission success.  
+Accurate fuel consumption prediction helps in:
+- Extending mission lifespan
+- Planning orbital maneuvers
+- Detecting inefficient usage
 
-## Learning Outcome
-- End-to-end ML workflow
-- Model evaluation and interpretation
-- Real-world problem solving
+---
+
+## 🧠 Approach
+1. Created a realistic synthetic satellite dataset
+2. Performed Exploratory Data Analysis (EDA)
+3. Built a Multiple Linear Regression model
+4. Evaluated the model using MAE, RMSE, and R²
+5. Visualized model performance using prediction vs actual plots
+
+---
+
+## 📊 Features Used
+- Satellite_Mass (kg)
+- Orbit_Altitude (km)
+- Mission_Duration (days)
+- Orbit_Corrections (count)
+
+**Target:** Fuel_Consumed (kg)
+
+---
+
+## 🛠️ Tech Stack
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib
+
+---
+
+## 📈 Results
+The model demonstrates strong predictive performance with interpretable coefficients, making it suitable for engineering analysis and learning purposes.
+
+---
+
+## 🚀 Future Improvements
+- Add regularization (Ridge/Lasso)
+- Introduce anomaly detection
+- Deploy as a cloud-based API
